@@ -10,7 +10,7 @@ public class Main {
         int rank = MPI.COMM_WORLD.Rank();
         int size = MPI.COMM_WORLD.Size();
 
-        int n = 1001;
+        int n = 2001;
         int[] flatAdj = new int[n * n];
         if (rank == 0) {
             for (int i = 0; i < n - 1; i++) {
